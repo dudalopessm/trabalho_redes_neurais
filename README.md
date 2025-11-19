@@ -29,7 +29,7 @@ O dataset é composto por dois arquivos principais:
 | **Attribute.csv** | Contém os dados de 8.000 amostras de válvulas. Cada linha representa os valores de pressão padronizados em 201 timestamps: `pressure timestamp 1 | pressure timestamp 2 | ... | pressure timestamp 201`. |
 | **Label.csv**     | Contém os rótulos de cada amostra de válvula. As classes são definidas como segue:  |
 
-### Classes de Válvulas com Cores
+### Classes de Válvulas
 <table>
   <thead>
     <tr>
