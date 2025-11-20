@@ -120,6 +120,7 @@ Aqui, \( P_i \) é o conjunto de valores de pressão das válvulas no timestamp 
 e \( \overline{P_i} \) e \( sd(P_i) \) são, respectivamente, a média e o desvio padrão de \( P_i \). O dataset já foi disponibilizado ao público normalizado, então não foi necessário nenhum tipo de pré-processamento posterior.
 
 Após a normalização, é necessário estruturar a saída das redes neurais, já que elas não retornam diretamente a classe em formato textual. Como o problema possui 8 classes distintas, a camada final das redes contém 8 neurônios. Para representar essas classes, utilizou-se a codificação One Hot, em que apenas um dos neurônios é ativado (valor 1) para cada amostra, indicando a classe correspondente; todos os demais permanecem com valor 0. A tabela com as classes PRSOV codificadas em formato One Hot está apresentada a seguir.
+
 ![Tabela das Classes Hot Encoded](images/tabela_1_hotencoded.png) 
 
 ---
