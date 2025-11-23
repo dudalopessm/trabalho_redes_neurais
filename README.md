@@ -149,7 +149,15 @@ Nesse caso eu quero avaliar modelos. No artigo usamos k cross validation, sendo 
 As redes MLP e CNN foram usadas para avaliação do quão eficazes elas são na avaliação de saúde de válvulas PRSOV, baseadas no dataset simulado fornecido. Os hiper-parâmetros número de camadas e número de neurônios foram variados para avaliação do melhor modelo, junto com variação nos números de filtros e kernel para a camada de convolução e pooling size para a camada de pooling.
 
 **Configurações**
-![Tabela das Configurações das Redes](../neural_networks/images/tabela_2.png)
+**Tabela 2. Configurações dos modelos de rede neural para classificação.**
+
+| **MLP Network** | **MLP Layers** | **CNN Network** | **CNN Layers** |
+| :---: | :--- | :---: | :--- |
+| 4N | DENSE (4N/Relu)<br>DENSE (8N/Softmax) | M1 | CONV1D (Filter = 1, Kernel = 8)<br>AV POOLING (Size = 4)<br>FLATTEN<br>DENSE (16N/Relu)<br>DENSE (8N/Softmax) |
+| 8N | DENSE (8N/Relu)<br>DENSE (8N/Softmax) | M2 | CONV1D (Filter = 2, Kernel = 8)<br>AV POOLING (Size = 4)<br>FLATTEN<br>DENSE (16N/Relu)<br>DENSE (8N/Softmax) |
+| 16N | DENSE (16N/Relu)<br>DENSE (8N/Softmax) | M3 | CONV1D (Filter = 1, Kernel = 16)<br>AV POOLING (Size = 4)<br>FLATTEN<br>DENSE (16N/Relu)<br>DENSE (8N/Softmax) |
+| 32N | DENSE (32N/Relu)<br>DENSE (8N/Softmax) | M4 | CONV1D (Filter = 1, Kernel = 8)<br>AV POOLING (Size = 8)<br>FLATTEN<br>DENSE (16N/Relu)<br>DENSE (8N/Softmax) |
+| 16-8N | DENSE (16N/Relu)<br>DENSE (8N/Relu)<br>DENSE (8N/Softmax) | M5 | CONV1D (Filter = 1, Kernel = 8)<br>AV POOLING (Size = 4)<br>CONV1D (Filter = 1, Kernel = 8)<br>AV POOLING (Size = 2)<br>FLATTEN<br>DENSE (16N/Relu)<br>DENSE (8N/Softmax) |
 
 O processo de treino contou com: Adam optimizer, 50 épocas, loss criteria como categorical cross entropy.
 
