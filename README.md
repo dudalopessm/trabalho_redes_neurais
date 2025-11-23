@@ -149,7 +149,7 @@ Nesse caso eu quero avaliar modelos. No artigo usamos k cross validation, sendo 
 As redes MLP e CNN foram usadas para avaliação do quão eficazes elas são na avaliação de saúde de válvulas PRSOV, baseadas no dataset simulado fornecido. Os hiper-parâmetros número de camadas e número de neurônios foram variados para avaliação do melhor modelo, junto com variação nos números de filtros e kernel para a camada de convolução e pooling size para a camada de pooling.
 
 **Configurações**
-![Tabela das Configurações das Redes](images/tabela_2.png)
+![Tabela das Configurações das Redes](../neural_networks/images/tabela_2.png)
 
 O processo de treino contou com: Adam optimizer, 50 épocas, loss criteria como categorical cross entropy.
 
