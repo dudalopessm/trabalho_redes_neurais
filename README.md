@@ -244,3 +244,5 @@ Devido ao One-Hot Encoding (onde apenas uma classe é 1), a somatória efetivame
 **GEEKSFORGEEKS**. **The Role of Softmax in Neural Networks: Detailed Explanation and Applications**. [S.l.: s.n., s.d.]. Disponível em: [https://www.geeksforgeeks.org/deep-learning/the-role-of-softmax-in-neural-networks-detailed-explanation-and-applications/](https://www.geeksforgeeks.org/deep-learning/the-role-of-softmax-in-neural-networks-detailed-explanation-and-applications/). Acesso em: 23 nov. 2025.
 
 **SCIKIT-LEARN**. **sklearn.decomposition.PCA**. [S.l.: s.n., s.d.]. Disponível em: [https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html). Acesso em: 23 nov. 2025.
+
+**GUBRANI, Sanya. Evaluating Multi-Class Classification Model Using Confusion Matrix in Python**. Medium, 1 mar. 2024. Disponível em: [https://medium.com/@sanyagubrani/evaluating-multi-class-classification-model-using-confusion-matrix-in-python-4d9344084dfa](https://medium.com/@sanyagubrani/evaluating-multi-class-classification-model-using-confusion-matrix-in-python-4d9344084dfa). Acesso em: 24 nov. 2025.

@@ -143,7 +143,7 @@ def run_experiments():
     confiiguracoes_mlp = ['4N', '8N', '16N', '32N', '16-8N']
     for cfg in confiiguracoes_mlp:
         print(f"Avaliando MLP: {cfg}")
-        rel_acuraacia = []
+        rel_acuracia = []
         for train_idx, val_idx in skf.split(X_train, y_train_int):
             X_fold_train, X_fold_val = X_train[train_idx], X_train[val_idx]
             y_fold_train, y_fold_val = y_train[train_idx], y_train[val_idx]
@@ -152,18 +152,18 @@ def run_experiments():
             model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
             model.fit(X_fold_train, y_fold_train, epochs=EPOCHS, batch_size=BATCH_SIZE, verbose=0)
             _, acc = model.evaluate(X_fold_val, y_fold_val, verbose=0)
-            rel_acuraacia.append(acc)
+            rel_acuracia.append(acc)
             
-        mean_acc = np.mean(rel_acuraacia)
-        std_acc = np.std(rel_acuraacia)
+        mean_acc = np.mean(rel_acuracia)
+        std_acc = np.std(rel_acuracia)
         resultados.append({'Model': 'MLP', 'Config': cfg, 'Val_Acc_Mean': mean_acc, 'Val_Acc_Std': std_acc})
         print(f"  -> Acc Média: {mean_acc:.4f}")
 
     # CNN
-    confiiguracoes_cnn = ['M1', 'M2', 'M3', 'M4', 'M5']
-    for cfg in confiiguracoes_cnn:
+    configuracoes_cnn = ['M1', 'M2', 'M3', 'M4', 'M5']
+    for cfg in configuracoes_cnn:
         print(f"Avaliando CNN: {cfg}")
-        rel_acuraacia = []
+        rel_acuracia = []
         for train_idx, val_idx in skf.split(X_train, y_train_int):
             X_fold_train, X_fold_val = X_train_cnn[train_idx], X_train_cnn[val_idx]
             y_fold_train, y_fold_val = y_train[train_idx], y_train[val_idx]
@@ -172,10 +172,10 @@ def run_experiments():
             model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
             model.fit(X_fold_train, y_fold_train, epochs=EPOCHS, batch_size=BATCH_SIZE, verbose=0)
             _, acc = model.evaluate(X_fold_val, y_fold_val, verbose=0)
-            rel_acuraacia.append(acc)
+            rel_acuracia.append(acc)
             
-        mean_acc = np.mean(rel_acuraacia)
-        std_acc = np.std(rel_acuraacia)
+        mean_acc = np.mean(rel_acuracia)
+        std_acc = np.std(rel_acuracia)
         resultados.append({'Model': 'CNN', 'Config': cfg, 'Val_Acc_Mean': mean_acc, 'Val_Acc_Std': std_acc})
         print(f"  -> Acc Média: {mean_acc:.4f}")
 
@@ -184,17 +184,17 @@ def run_experiments():
     print("\nAvaliando KNN...")
     for k in k_values:
         knn = KNeighborsClassifier(n_neighbors=k)
-        rel_acuraacia = []
+        rel_acuracia = []
         for train_idx, val_idx in skf.split(X_train, y_train_int):
             X_fold_train, X_fold_val = X_train[train_idx], X_train[val_idx]
             y_fold_train_labels = y_train_int[train_idx]
             y_fold_val_labels = y_train_int[val_idx]
             knn.fit(X_fold_train, y_fold_train_labels)
             acc = knn.score(X_fold_val, y_fold_val_labels)
-            rel_acuraacia.append(acc)
+            rel_acuracia.append(acc)
         
-        mean_acc = np.mean(rel_acuraacia)
-        std_acc = np.std(rel_acuraacia)
+        mean_acc = np.mean(rel_acuracia)
+        std_acc = np.std(rel_acuracia)
         resultados.append({'Model': 'KNN', 'Config': f'K={k}', 'Val_Acc_Mean': mean_acc, 'Val_Acc_Std': std_acc})
         print(f"  -> KNN K={k}: {mean_acc:.4f}")
 
