@@ -223,26 +223,51 @@ Devido ao One-Hot Encoding (onde apenas uma classe é 1), a somatória efetivame
 - O cálculo de medidas estatísticas pode ser feito a partir da quantidade de TP, TN, FP e FN. As medidas são: acurácia (quantas previsões o modelo acertou entre todas), precisão (quantas previsões positivas estavam realmente certas), recall (mede o quão bom o modelo é prevendo positivos), f1-score (combinação de precisão e recall), especificidade (habilidade de identificar corretamente classes negativas).
 - Para problemas multi-classe, as linhas representam as classes e as colunas as classes previstas. Se é um problema de 8 classes então a matriz será 8x8.
 
+## Conclusões
+Nosso trabalho conseguiu melhorar os modelos apresentados no artigo, tanto os MLP quanto as CNN. O modelo MLP com 32 neurônios e callback na taxa de aprendizado trouxe a melhor acurácia entre todos os modelos da implementação. Já a CNN M11, que combina a função de ativação Tahn com uma rede maior com mais filtros, maior tamanho de kernel e maior quantidade de neurônios na camada final, foi um modelo competitivo também. 
+
+Também conseguimos tirar conclusões de que as redes neurais são eficazes e têm muito sucesso em prever falhas nas válvulas PRSOV. Os resultados estão disponíveis na pasta images.
+
 ---
 
 ## Referências
 
-**BHANDARI**, Aniruddha. **Confusion Matrix in Machine Learning**. GeeksforGeeks, 1 maio 2025. Disponível em: [https://www.geeksforgeeks.org/machine-learning/confusion-matrix-machine-learning/](https://www.geeksforgeeks.org/machine-learning/confusion-matrix-machine-learning/). Acesso em: 23 nov. 2025.
+AMIT, Hey. **Stochastic Gradient Descent (SGD) and Adam**. Medium, [s.d.]. Disponível em: [https://medium.com/data-scientists-diary/stochastic-gradient-descent-sgd-and-adam-4fe496ef1bbf](https://medium.com/data-scientists-diary/stochastic-gradient-descent-sgd-and-adam-4fe496ef1bbf). Acesso em: 25 nov. 2025.
 
-**BRASIL-AI**. **KNN — K-Nearest Neighbors**. Medium, [s.d.]. Disponível em: [https://medium.com/brasil-ai/knn-k-nearest-neighbors-1-e140c82e9c4e](https://medium.com/brasil-ai/knn-k-nearest-neighbors-1-e140c82e9c4e). Acesso em: 23 nov. 2025.
+ASIMOV ACADEMY. **Visualização de dados com Python**. [S.l.: s.n., s.d.]. Disponível em: [https://hub.asimov.academy/blog/visualizacao-de-dados-com-python/](https://hub.asimov.academy/blog/visualizacao-de-dados-com-python/). Acesso em: 23 nov. 2025.
 
-**CHAUHAN**, A. **K-Fold Cross-Validation in Keras**. Medium (The Owl), 2019. Disponível em: [https://medium.com/the-owl/k-fold-cross-validation-in-keras-3ec4a3a00538](https://medium.com/the-owl/k-fold-cross-validation-in-keras-3ec4a3a00538). Acesso em: 23 nov. 2025.
+BHANDARI, Aniruddha. **Confusion Matrix in Machine Learning**. GeeksforGeeks, 1 maio 2025. Disponível em: [https://www.geeksforgeeks.org/machine-learning/confusion-matrix-machine-learning/](https://www.geeksforgeeks.org/machine-learning/confusion-matrix-machine-learning/). Acesso em: 23 nov. 2025.
 
-**GEEKSFORGEEKS**. **Adam Optimizer in Deep Learning**. [S.l.: s.n., s.d.]. Disponível em: [https://www.geeksforgeeks.org/deep-learning/adam-optimizer/](https://www.geeksforgeeks.org/deep-learning/adam-optimizer/). Acesso em: 23 nov. 2025.
+BRASIL-AI. **KNN — K-Nearest Neighbors**. Medium, [s.d.]. Disponível em: [https://medium.com/brasil-ai/knn-k-nearest-neighbors-1-e140c82e9c4e](https://medium.com/brasil-ai/knn-k-nearest-neighbors-1-e140c82e9c4e). Acesso em: 23 nov. 2025.
 
-**GEEKSFORGEEKS**. **Categorical Cross-Entropy in Multi-Class Classification**. [S.l.: s.n., s.d.]. Disponível em: [https://www.geeksforgeeks.org/deep-learning/categorical-cross-entropy-in-multi-class-classification/](https://www.geeksforgeeks.org/deep-learning/categorical-cross-entropy-in-multi-class-classification/). Acesso em: 23 nov. 2025.
+BROWNLEE, Jason. **Gentle Introduction to the Adam Optimization Algorithm for Deep Learning**. MachineLearningMastery.com, 13 jan. 2021. Disponível em: [https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/](https://machinelearningmastery.com/adam-optimization-algorithm-for-deep-learning/). Acesso em: 25 nov. 2025.
 
-**GEEKSFORGEEKS**. **Intuition Behind Adagrad Optimizer**. [S.l.: s.n., s.d.]. Disponível em: [https://www.geeksforgeeks.org/machine-learning/intuition-behind-adagrad-optimizer/](https://www.geeksforgeeks.org/machine-learning/intuition-behind-adagrad-optimizer/). Acesso em: 23 nov. 2025.
+BROWNLEE, Jason. **Understand the Dynamics of Learning Rate on Deep-Learning Neural Networks**. MachineLearningMastery.com, [s.d.]. Disponível em: [https://machinelearningmastery.com/understand-the-dynamics-of-learning-rate-on-deep-learning-neural-networks/](https://machinelearningmastery.com/understand-the-dynamics-of-learning-rate-on-deep-learning-neural-networks/). Acesso em: 25 nov. 2025.
 
-**GEEKSFORGEEKS**. **ReLU Activation Function in Deep Learning**. [S.l.: s.n., s.d.]. Disponível em: [https://www.geeksforgeeks.org/deep-learning/relu-activation-function-in-deep-learning/](https://www.geeksforgeeks.org/deep-learning/relu-activation-function-in-deep-learning/). Acesso em: 23 nov. 2025.
+CHAUHAN, A. **K-Fold Cross-Validation in Keras**. Medium (The Owl), 2019. Disponível em: [https://medium.com/the-owl/k-fold-cross-validation-in-keras-3ec4a3a00538](https://medium.com/the-owl/k-fold-cross-validation-in-keras-3ec4a3a00538). Acesso em: 23 nov. 2025.
 
-**GEEKSFORGEEKS**. **The Role of Softmax in Neural Networks: Detailed Explanation and Applications**. [S.l.: s.n., s.d.]. Disponível em: [https://www.geeksforgeeks.org/deep-learning/the-role-of-softmax-in-neural-networks-detailed-explanation-and-applications/](https://www.geeksforgeeks.org/deep-learning/the-role-of-softmax-in-neural-networks-detailed-explanation-and-applications/). Acesso em: 23 nov. 2025.
+FACURE, Matheus. **Funções de Ativação**. [S.l.: s.n.], 12 jul. 2017. Disponível em: [https://matheusfacure.github.io/2017/07/12/activ-func/](https://matheusfacure.github.io/2017/07/12/activ-func/). Acesso em: 25 nov. 2025.
 
-**SCIKIT-LEARN**. **sklearn.decomposition.PCA**. [S.l.: s.n., s.d.]. Disponível em: [https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html). Acesso em: 23 nov. 2025.
+GEEKSFORGEEKS. **Adam Optimizer in Deep Learning**. [S.l.: s.n., s.d.]. Disponível em: [https://www.geeksforgeeks.org/deep-learning/adam-optimizer/](https://www.geeksforgeeks.org/deep-learning/adam-optimizer/). Acesso em: 23 nov. 2025.
 
-**GUBRANI, Sanya. Evaluating Multi-Class Classification Model Using Confusion Matrix in Python**. Medium, 1 mar. 2024. Disponível em: [https://medium.com/@sanyagubrani/evaluating-multi-class-classification-model-using-confusion-matrix-in-python-4d9344084dfa](https://medium.com/@sanyagubrani/evaluating-multi-class-classification-model-using-confusion-matrix-in-python-4d9344084dfa). Acesso em: 24 nov. 2025.
+GEEKSFORGEEKS. **Categorical Cross-Entropy in Multi-Class Classification**. [S.l.: s.n., s.d.]. Disponível em: [https://www.geeksforgeeks.org/deep-learning/categorical-cross-entropy-in-multi-class-classification/](https://www.geeksforgeeks.org/deep-learning/categorical-cross-entropy-in-multi-class-classification/). Acesso em: 23 nov. 2025.
+
+GEEKSFORGEEKS. **Intuition Behind Adagrad Optimizer**. [S.l.: s.n., s.d.]. Disponível em: [https://www.geeksforgeeks.org/machine-learning/intuition-behind-adagrad-optimizer/](https://www.geeksforgeeks.org/machine-learning/intuition-behind-adagrad-optimizer/). Acesso em: 23 nov. 2025.
+
+GEEKSFORGEEKS. **ReLU Activation Function in Deep Learning**. [S.l.: s.n., s.d.]. Disponível em: [https://www.geeksforgeeks.org/deep-learning/relu-activation-function-in-deep-learning/](https://www.geeksforgeeks.org/deep-learning/relu-activation-function-in-deep-learning/). Acesso em: 23 nov. 2025.
+
+GEEKSFORGEEKS. **The Role of Softmax in Neural Networks: Detailed Explanation and Applications**. [S.l.: s.n., s.d.]. Disponível em: [https://www.geeksforgeeks.org/deep-learning/the-role-of-softmax-in-neural-networks-detailed-explanation-and-applications/](https://www.geeksforgeeks.org/deep-learning/the-role-of-softmax-in-neural-networks-detailed-explanation-and-applications/). Acesso em: 23 nov. 2025.
+
+GEEKSFORGEEKS. **What is Label Smoothing?** [S.l.: s.n., s.d.]. Disponível em: [https://www.geeksforgeeks.org/machine-learning/what-is-label-smoothing/#what-is-label-smoothing](https://www.geeksforgeeks.org/machine-learning/what-is-label-smoothing/#what-is-label-smoothing). Acesso em: 25 nov. 2025.
+
+GUBRANI, Sanya. **Evaluating Multi-Class Classification Model Using Confusion Matrix in Python**. Medium, 1 mar. 2024. Disponível em: [https://medium.com/@sanyagubrani/evaluating-multi-class-classification-model-using-confusion-matrix-in-python-4d9344084dfa](https://medium.com/@sanyagubrani/evaluating-multi-class-classification-model-using-confusion-matrix-in-python-4d9344084dfa). Acesso em: 24 nov. 2025.
+
+KERAS. **Adam — Keras Optimizers**. [S.l.: s.n., s.d.]. Disponível em: [https://keras.io/api/optimizers/adam/](https://keras.io/api/optimizers/adam/). Acesso em: 25 nov. 2025.
+
+KERAS. **SGD — Keras Optimizers**. [S.l.: s.n., s.d.]. Disponível em: [https://keras.io/api/optimizers/sgd/](https://keras.io/api/optimizers/sgd/). Acesso em: 25 nov. 2025.
+
+SANO, Humberto Hayashi; BERTON, Lilian. **Application of Deep Learning Models for Aircraft Maintenance**. In: ENCONTRO NACIONAL DE INTELIGÊNCIA ARTIFICIAL E COMPUTACIONAL (ENIAC), 19., 2022, Campinas/SP. Anais [...]. Porto Alegre: Sociedade Brasileira de Computação, 2022. p. 787-797. Disponível em: [https://doi.org/10.5753/eniac.2022.227575](https://doi.org/10.5753/eniac.2022.227575).
+
+SCIKIT-LEARN. **sklearn.decomposition.PCA**. [S.l.: s.n., s.d.]. Disponível em: [https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html](https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html). Acesso em: 23 nov. 2025.
+
+SRIVASTAVA, Shivansh. **Understanding the Difference Between ReLU and Sigmoid Activation Functions in Deep Learning**. Medium, 18 abr. 2024. Disponível em: [https://medium.com/@srivastavashivansh8922/understanding-the-difference-between-relu-and-sigmoid-activation-functions-in-deep-learning-33b280fc2071](https://medium.com/@srivastavashivansh8922/understanding-the-difference-between-relu-and-sigmoid-activation-functions-in-deep-learning-33b280fc2071). Acesso em: 25 nov. 2025.
