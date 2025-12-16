@@ -4,7 +4,7 @@
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter&logoColor=white)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Latest-blue?logo=scikit-learn&logoColor=white)
 
-# Disciplina: Inteligência Computacional - GBC073
+# Aplicando deep learning para classificação de falhas de válvulas PRSOV
 **Grupo:** Eduarda Lopes, Carla Azevedo, Lucas Matos
 
 ---
