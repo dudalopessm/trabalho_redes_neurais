@@ -1,3 +1,9 @@
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-Latest-red?logo=keras&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-Latest-orange?logo=tensorflow&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=jupyter&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Latest-blue?logo=scikit-learn&logoColor=white)
+
 # Disciplina: Inteligência Computacional - GBC073
 **Grupo:** Eduarda Lopes, Carla Azevedo, Lucas Matos
 
